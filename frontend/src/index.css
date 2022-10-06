@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #800064;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #a31484;
+    border-radius: 100vh;
+    border: 1px solid #800064;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #a31484;
+  }
+
+  /*scrollbar admin page*/
+  .scrollbaradmin::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .scrollbaradmin::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #294162;
+  }
+
+  .scrollbaradmin::-webkit-scrollbar-thumb {
+    background: #2f4d75;
+    border-radius: 100vh;
+    border: 1px solid #294162;
+  }
+
+  .scrollbaradmin::-webkit-scrollbar-thumb:hover {
+    background: #2f4d75;
+  }
+}
+
+/* css AudioPlayer */
+.rhap_container {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.rhap_time {
+  color: #ffffff !important;
+}
+
+.rhap_play-pause-button {
+  color: #ffffff !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.rhap_play-pause-button:hover {
+  transform: scale(1.2);
+}
+
+.rhap_forward-button,
+.rhap_rewind-button,
+.rhap_skip-button,
+.rhap_volume-button,
+.rhap_repeat-button {
+  transition: all 0.3s ease-in-out;
+}
+
+.rhap_forward-button:hover,
+.rhap_rewind-button:hover,
+.rhap_skip-button:hover,
+.rhap_volume-button:hover,
+.rhap_repeat-button:hover {
+  transform: scale(1.2);
+  color: #555 !important;
+}
+
+.rhap_progress-filled {
+  background-color: #ffffff !important;
+}
+
+.rhap_progress-indicator,
+.rhap_volume-indicator {
+  background: #2e2e2e !important;
+}
+
+.rhap_progress-indicator:hover,
+.rhap_volume-indicator:hover {
+  transform: scale(1.2);
+}
+
+.rhap_download-progress,
+.rhap_volume-bar {
+  background-color: #cccccc !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montagu Slab", serif;
+}
